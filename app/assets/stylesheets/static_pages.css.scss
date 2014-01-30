@@ -2,10 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+$form_font: Gentium Book Basic, serif;
+
 .form_head {
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 20px;
 }
+
+
 
 .input_format {
   width: 100%;
@@ -14,4 +20,27 @@
   border: none;
   border-bottom: 1px solid grey;
   font-size: 12px;
+  font-family: $form_font;
 }
+
+.form_submit {
+    text-align: center;
+}
+
+.terms {
+  font-family: $form_font;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.button_format {
+  font-family: $form_font;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 0px;
+  width: 40%;
+  background: white;
+  box-shadow: 0px 0px 0px white;
+
+}
+

@@ -43,6 +43,19 @@
       <%= file_field_tag :picture, placeholder: "Upload Profile Pictrue", class: "input_format" %>
     </div>
 
+    <div class="clear"></div>
+
+    <div class="grid_6 form_submit">
+
+      <%= check_box_tag :terms %>
+      <%= label_tag :terms, "Agree to Terms and Conditions", class: "terms" %>
+
+      <br>
+
+      <%= submit_tag "Sign up", class: "button_format" %>
+
+    </div>
+
     <% end %>
 
   </div>

@@ -1,0 +1,54 @@
+<div class="container_12">
+
+<!--   <div class="grid_3 alpha"></div> -->
+
+  <div class="grid_6 prefix_3">
+
+    <div class="form_head">
+      <img src="/assets/AGS_Logo_02.png" width="300px">
+    </div>
+
+  </div>
+
+  <div class="grid_6 prefix_3">
+
+
+    <%= form_tag do%>
+
+    <div class="grid_3 alpha">
+      <%= label_tag %>
+      <%= text_field_tag :name , nil, placeholder: "Name" %>
+
+      <%= label_tag %>
+      <%= text_field_tag :username , nil, placeholder: "Username" %>
+
+      <%= label_tag %>
+      <%= text_field_tag :country_club , nil, placeholder: "Your Country Club" %>
+
+      <%= label_tag %>
+      <%= date_field_tag :birthday , nil, placeholder: "Birthday" %>
+    </div>
+
+    <div class="grid_3 omega">
+      <%= label_tag %>
+      <%= text_field_tag :email , nil, placeholder: "Email Address" %>
+
+      <%= label_tag %>
+      <%= password_field_tag :username , nil, placeholder: "Password" %>
+
+      <%= label_tag %>
+      <%= number_field_tag :handicap, nil, placeholder: "Handicap" %>
+
+      <%= label_tag "Upload Picture" %>
+      <%= file_field_tag :picture %>
+    </div>
+
+    <% end %>
+
+  </div>
+
+
+<!--   <div class="grid_3 omega"></div> -->
+
+
+</div>

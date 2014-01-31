@@ -20,13 +20,15 @@ $(function() {
    $('input').focusout(function() {
     var input_error = $(this).attr('title');
     var input_id = $(this).attr('id');
-    if(!$(this).val()) {
-      $(this).after("<p class='error_messages'>" + input_error + '</p>');
-    }
-    else {
-      $('#' + input_id).next().remove();
-    }
-    });
+
+      if(!$(this).val()) {
+        $('#' + input_id).next().remove('p');
+        $(this).after("<p class='error_messages'>" + input_error + '</p>');
+      }
+      else {
+        $('#' + input_id).next().remove('p');
+      }
+  });
 });
 
 

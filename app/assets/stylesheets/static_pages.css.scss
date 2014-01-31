@@ -7,7 +7,7 @@ $form_font: Gentium Book Basic, serif;
 
 .form_head {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -15,7 +15,8 @@ $form_font: Gentium Book Basic, serif;
 
 .input_format {
   width: 100%;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 5px;
   height: 20px;
   border: none;
   border-bottom: 1px solid grey;
@@ -46,5 +47,12 @@ $form_font: Gentium Book Basic, serif;
   color: white;
   padding: 5px;
 
+}
+
+.error_messages {
+  font-family: $form_font;
+  font-size: 11px;
+  margin-top: 1px;
+  color: red;
 }
 

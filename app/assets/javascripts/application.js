@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(function() {
+   $('input').focusout(function() {
+    var input_error = $(this).attr('title');
+    if(!$(this).val()) {
+      $(this).after("<p class='error_messages'>" + input_error + '</p>');
+    }
+    });
+});
+
+

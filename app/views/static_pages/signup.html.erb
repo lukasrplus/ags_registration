@@ -17,30 +17,30 @@
 
     <div class="grid_3 alpha">
       <%= label_tag %>
-      <%= text_field_tag :name , nil, placeholder: "Name", class: "input_format", title: "Please enter name, (eg. Tiger Woods)" %>
+      <%= text_field_tag :name , nil, placeholder: "Name", class: "input_format", title: "Please enter name, (eg. Tiger Woods)." %>
 
       <%= label_tag %>
-      <%= text_field_tag :username , nil, placeholder: "Username", class: "input_format" %>
+      <%= text_field_tag :username , nil, placeholder: "Username", class: "input_format", title: "Please enter a username." %>
 
       <%= label_tag %>
-      <%= text_field_tag :country_club , nil, placeholder: "Your Country Club", class: "input_format" %>
+      <%= text_field_tag :country_club , nil, placeholder: "Your Country Club", class: "input_format", title: "Please enter your Country Club." %>
 
       <%= label_tag %>
-      <%= date_field_tag :birthday , nil, placeholder: "Birthday", class: "input_format" %>
+      <%= date_field_tag :birthday , nil, placeholder: "Birthday", class: "input_format", title: "Please tell us your birthday." %>
     </div>
 
     <div class="grid_3 omega">
       <%= label_tag %>
-      <%= text_field_tag :email , nil, placeholder: "Email Address", class: "input_format" %>
+      <%= text_field_tag :email , nil, placeholder: "Email Address", class: "input_format", title: "Please enter your email address." %>
 
       <%= label_tag %>
-      <%= password_field_tag :username , nil, placeholder: "Password", class: "input_format" %>
+      <%= password_field_tag :username , nil, placeholder: "Password", class: "input_format", title: "Please enter your password." %>
 
       <%= label_tag %>
-      <%= number_field_tag :handicap, nil, placeholder: "Handicap", class: "input_format" %>
+      <%= number_field_tag :handicap, nil, placeholder: "Handicap", class: "input_format", title: "Don't be modest, tell us how good you are." %>
 
       <%= label_tag %>
-      <%= file_field_tag :picture, placeholder: "Upload Profile Pictrue", class: "input_format" %>
+      <%= file_field_tag :picture, placeholder: "Upload Profile Pictrue", class: "input_format", title: "Sorry but we need a mugshot for the file." %>
     </div>
 
     <div class="clear"></div>

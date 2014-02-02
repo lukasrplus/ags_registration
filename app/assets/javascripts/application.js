@@ -13,10 +13,20 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require pickadate/picker
+//= require pickadate/picker.date
 //= require_tree .
 
 
 $(function() {
+
+  $('#datepicker').pickadate({
+    min: [1920,1,1],
+    max: [2000,1,1],
+    selectYears: 50,
+    selectMonths: true
+  });
+
    $('input').focusout(function() {
     var input_error = $(this).attr('title');
     var input_id = $(this).attr('id');
@@ -29,7 +39,6 @@ $(function() {
         $('#' + input_id).next().remove('p');
       }
   });
-
 
 
 //  SANDY CODE:

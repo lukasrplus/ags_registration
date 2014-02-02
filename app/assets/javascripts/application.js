@@ -41,7 +41,8 @@ $(function() {
         // … send username to the server
         var jsonResponse = $.getJSON(
             "/users/new.json",
-            val,
+            // METHOD TO SET THE PARAMS HASH IN JS
+            { username: val },
             function(theDataBeingReturned, myGreatStatus, XHRobject) {
                 console.log(theDataBeingReturned);
                 console.log(myGreatStatus);

@@ -17,16 +17,25 @@ class UsersController < ApplicationController
         else
           render json: @invalid
         end
-
       end
-
     end
-
   end
 
 
 
   def create
+    u = User.new
+    u.name = params[:name]
+    u.username = params[:username]
+    u.country_club = params[:country_club]
+    u.birthday = params[:birthday]
+    u.email = params[:email]
+    u.password = params[:password]
+    u.handicap = params[:handicap]
+    u.picture = params[:picture]
+    u.save
+
+    redirect_to static_pages_signup_url
   end
 
 end

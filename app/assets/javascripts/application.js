@@ -37,9 +37,10 @@ $(function() {
   $('#username').focusout(function() {
         // … grab the value
         var val = $(this).val();
+        var input_id = $(this).attr('id');
 
         // … send username to the server
-        var jsonResponse = $.getJSON(
+        $.getJSON(
             "/users/new.json",
             // METHOD TO SET THE PARAMS HASH IN JS
             { username: val },
@@ -47,15 +48,10 @@ $(function() {
                 console.log(theDataBeingReturned);
                 console.log(myGreatStatus);
                 console.log(XHRobject);
-                // $('.msg').remove();
-                // if (theDataBeingReturned['valid'] == "1") {
-                //     // … did the serve say it was a valid username?
-                //     $('#username').after('<p class="msg">you did it!!!!</p>');
-                // } else {
-                //     // … or did the serve say it was taken?
-                //     $('#username').closest('.form-group').addClass('has-error');
-                //     $('#username').after('<p class="msg">no good</p>');
-                // }
+                $('#' + input_id).next().remove('p');
+                if (theDataBeingReturned['valid'] == "0") {
+                    $('#username').after('<p class="error_messages">Sorry, this username is already taken.</p>');
+                }
             }
         );
     });

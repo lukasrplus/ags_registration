@@ -1,6 +1,8 @@
 AgsRegistration::Application.routes.draw do
 
 
+  root :to => "static_pages#signup"
+
   get 'users/new'
   post '/users' => 'users#create'
 

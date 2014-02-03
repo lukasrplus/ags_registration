@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def password_recovery
   end
+
+  def password_reset
+  end
 end

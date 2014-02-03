@@ -61,6 +61,11 @@ $(function() {
                 if (theDataBeingReturned['valid'] == "0") {
                     $('#username').after('<p class="error_messages">Sorry, this username is already taken.</p>');
                 }
+
+                if (!$('#' + input_id).val()){
+                  $('#' + input_id).next().remove('p');
+                  $('#username').after('<p class="error_messages">Please enter your username.</p>');
+                }
             }
         );
     });

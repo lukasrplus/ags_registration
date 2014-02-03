@@ -35,7 +35,7 @@ class UsersController < ApplicationController
     u.picture = params[:picture]
     u.save
 
-    redirect_to static_pages_signup_url
+    redirect_to root_url
   end
 
 end
